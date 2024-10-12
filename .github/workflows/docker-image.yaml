@@ -23,5 +23,5 @@ jobs:
       uses: docker/build-push-action@v5
       with:
         push: true
-        context: startapp.sh
+        context: .
         tags: wwng2333/docker-dino-im:latest
