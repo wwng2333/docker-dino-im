@@ -20,7 +20,7 @@ jobs:
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v3
     - name: Build and push
-      uses: docker/build-push-action@v6
+      uses: docker/build-push-action@v5
       with:
         push: true
-        tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.GITHUB_REPOSITORY_NAME_PART }}:latest
+        tags: wwng2333/docker-dino-im:latest
